@@ -1,6 +1,16 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,100,300,700,500");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Poppins", "Helvetica", "sans-serif";
+$headers-font: 'Roboto', "sans-serif";
+
+h1 {
+	font-family: $body-font;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 52px;
+	line-height: 61px;
+}
+

@@ -1,29 +1,12 @@
-#search-box{
-	margin-bottom: 80px;
-	max-width: 800px;
-	margin: auto;
-	input {
-		height: 50px;
-		width: 300px;
-		background: rgba(255, 255, 255, 0.8);
-		border-radius: 10px;
-	}
-	::placeholder {
-	text-align: center;	
-	font-size: 22px;
-	}
-}
 
 #homepage-banner {
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- h1 {
- 	font-size: 64px;
- }
- h2 {
- 	font-size: 48px;
- }
+
+background: linear-gradient(30.03deg, #F0F5F8 34.41%, rgba(240, 245, 248, 0) 87.3%);;
+// width: 100vw; 
+background-size: 100vw;
+height: 800px;
+
+
 }
 
 @media (min-width: 956px) {
@@ -31,3 +14,4 @@
 		width: 600px;
 	}
 }
+
