@@ -1,12 +1,11 @@
 class ServicesController < ApplicationController
-before_action :set_service, only: [:index, :show]
-
+before_action :set_service, only: :show
   def index
-  	@service = Service.all
+  	@services = Service.all
   end
 
   def show
-  	set_service
+  
   end
 
 	private
