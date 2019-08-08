@@ -6,7 +6,7 @@ class ConsultantsController < ApplicationController
   end
 
   def show
-  	set_consutant
+  	set_consultant
   end
 
 	private
