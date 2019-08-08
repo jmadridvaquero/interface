@@ -1,18 +1,19 @@
 
 #homepage-banner {
 	background: linear-gradient(30.03deg, #F0F5F8 34.41%, rgba(240, 245, 248, 0) 87.3%);;
-	// width: 100vw; 
+	width: 100vw; 
 	background-size: 100vw;
 	height: 800px;
 }
 
-.homepage-banner h1 {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 52px;
-	line-height: 61px;
+.main-header {
+	position: absolute;
+	height: 183px;
+	width: 436px;
+	left: 185px;
+	top: 221px;
 }
+
 
 @media (min-width: 956px) {
 	#search-box input{
