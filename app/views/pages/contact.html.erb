@@ -16,11 +16,15 @@
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputEmail1">Adresse de courriel</label>
-	    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre addresse">
+	    <input type="email" class="form-control form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre addresse">
 	    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Parlez-nous de votre projet"></textarea>
-  </div>
+		    <label for="exampleFormControlTextarea1">Téléphone</label>
+		    <textarea class="form-control form-control" id="exampleFormControlTextarea1" placeholder="(___) ___ - ____"></textarea>
+		  </div>
+	    <div class="form-group">
+		    <label for="exampleFormControlTextarea1">Message</label>
+		    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Parlez-nous de votre projet"></textarea>
+		  </div>
 	  </div>
   <div class="form-group">
     <label for="exampleFormControlFile1">Partagez des fichiers</label>
@@ -32,3 +36,4 @@
 	</form>
 	</div>
 </div>
+ <%= render partial: "shared/footer" %>

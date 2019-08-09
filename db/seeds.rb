@@ -12,8 +12,8 @@ Consultant.create([{ name: 'Éric Steedman', bio: 'lorem ipsum', photo: 'https:/
 Consultant.create([{ name: 'Javier M Vaquero', bio: 'lorem ipsum', photo: 'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565365881/interface/prfile_linkedin_wvdjtl.jpg', expertise: 'consultant'}])	
 
 Service.create!([{ 
-	name: 'Études, analyses et recherche', 
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
+	name: 'Études, analyses et recherche', photo:'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565384351/interface/unsplash-service-analyse-recherche_os43oc.jpg', summary:'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}])
 Service.create!([{ 
 	name: 'Stratégies d’organisation', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
