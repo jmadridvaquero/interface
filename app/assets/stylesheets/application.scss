@@ -30,7 +30,16 @@
 @import "components/index";
 @import "pages/index";
 
+// Import pages
+@import "consultants";
+@import "pages";
+@import "reviews";
+@import "services";
+
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: auto;
+  width: 1280px;
 }
 
