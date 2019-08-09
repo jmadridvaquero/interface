@@ -4,11 +4,12 @@ puts "Howdy, let's clean the database"
 
 Consultant.destroy_all
 Service.destroy_all
+Review.destroy_all
 
 
-Consultant.create([{ name: 'Stéphane Guérard', bio: 'lorem ipsum', photo: 'url', expertise: 'consultant'}])
-Consultant.create([{ name: 'Éric Steedman', bio: 'lorem ipsum', photo: 'url', expertise: 'consultant'}])
-Consultant.create([{ name: 'Javier M Vaquero', bio: 'lorem ipsum', photo: 'url', expertise: 'consultant'}])	
+Consultant.create([{ name: 'Stéphane Guérard', bio: 'Stéphane a acquis une solide expertise en entrepreneuriat collectif en accompagnant depuis plus de 30 ans des porteurs de projet et autres entrepreneurs dans les secteurs communautaire et de l’économie sociale. Lui-même plusieurs fois créateur d’entreprise, c’est un polyvalent à l’esprit autodidacte qui croit en la capacité des individus à se mobiliser pour atteindre leurs visées. Économiste, administrateur et gestionnaire de projets, il est formé en finances, comptabilité et marketing — scolarité de doctorat en sciences de gestion – et manie les chiffes avec une aisance hors du commun.', photo: 'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565364746/interface/Boyce_Cindy_09_coop_4814_m7wvgr.jpg', expertise: 'planification stratégique, finance, opérations'}])
+Consultant.create([{ name: 'Éric Steedman', bio: 'lorem ipsum', photo: 'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565365693/interface/E%CC%81ric-photo-1_njiwjo.jpg', expertise: 'consultant'}])
+Consultant.create([{ name: 'Javier M Vaquero', bio: 'lorem ipsum', photo: 'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565365881/interface/prfile_linkedin_wvdjtl.jpg', expertise: 'consultant'}])	
 
 Service.create!([{ 
 	name: 'Études, analyses et recherche', 

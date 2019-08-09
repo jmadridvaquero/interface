@@ -1,6 +1,19 @@
+<%= render partial: "shared/navbar" %>
+
 <div class="container">
-	 <img src="#" alt="">
-	 <h1><%= @consultant.name %></h1>
-   <p><%= @consultant.bio %></p>
-   <p><%= @consultant.expertise %></p>
+	<div class="consultant-div">
+		 <div class="photo-consultant-show">
+		 		<%= cl_image_tag @consultant.photo, id:"photo-consultant-show"%>
+		 </div>
+		 <div class="consultant-name">
+		 	 <h3><%= @consultant.name %></h3>
+		 </div>
+		 <div class="consultant-bio">
+	   		<p><%= @consultant.bio %></p>
+		 </div>
+		 <div class="consultant-expertise">
+	   		<p>Expertise: <strong><%= @consultant.expertise %></strong></p>
+		 </div>
+		<button type="button" class="btn btn-danger">Pour me rejoindre</button>
+	</div>
 </div>

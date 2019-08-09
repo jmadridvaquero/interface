@@ -20,6 +20,7 @@ gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'webpacker'
 gem 'pg_search'
+gem 'cloudinary', '~> 1.9.1'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
