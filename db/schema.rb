@@ -29,10 +29,10 @@ ActiveRecord::Schema.define(version: 2019_08_07_175013) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "services_id"
+    t.bigint "service_id"
     t.string "position"
     t.string "company"
-    t.index ["services_id"], name: "index_reviews_on_services_id"
+    t.index ["service_id"], name: "index_reviews_on_service_id"
   end
 
   create_table "services", force: :cascade do |t|
@@ -44,5 +44,5 @@ ActiveRecord::Schema.define(version: 2019_08_07_175013) do
     t.text "summary"
   end
 
-  add_foreign_key "reviews", "services", column: "services_id"
+  add_foreign_key "reviews", "services"
 end
