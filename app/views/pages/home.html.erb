@@ -43,6 +43,21 @@
 	</div>
 </div>
 
+<!-- SECTION REVIEWS-->
+<div>		
+	<h2>Ce que nos clients disent sur nous</h2>
+	<div class="container">
+		<% @reviews.each do |review| %>
+		<div>
+			<%= review.content %>
+		</div>
+		<div>
+			<p><strong><%= review.client %>,</strong> <%= review.position %></p> <br>
+			<p> <%= review.company %></p>
+		</div>
+		<% end %>
+	</div>
+</div>
 
 
 

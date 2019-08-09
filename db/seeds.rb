@@ -29,5 +29,8 @@ Service.create!([{
 	name: 'Divers', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 
+Review.create!([{ client: 'Megan Kotze', position: 'Development Manager', company: 'Hot Docs Documentary Film Festival', 
+				  content: 'Hot Docs commissioned Co-op Interface to conduct the festival’s first economic impact assessment. We worked easily and collaboratively with [them and were].. very pleased with Co-op Interface’s professionalism, attention to detail, and ultimately the results of the study.',
+				  service: Service.first}])	
 
 puts "seed is complete!"
