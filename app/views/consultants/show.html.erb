@@ -1,6 +1,5 @@
 <%= render partial: "shared/navbar" %>
 
-<div class="container">
 	<div class="consultant-div">
 		 <div class="photo-consultant-show">
 		 		<%= cl_image_tag @consultant.photo, id:"photo-consultant-show"%>
@@ -14,6 +13,7 @@
 		 <div class="consultant-expertise">
 	   		<p>Expertise: <strong><%= @consultant.expertise %></strong></p>
 		 </div>
-		<button type="button" class="btn btn-danger">Pour me rejoindre</button>
+		 <div class="button-contact">
+				<button type="button" class="btn btn-danger">Pour me rejoindre</button>
+		 </div>
 	</div>
-</div>
