@@ -4,15 +4,21 @@
 <div id="homepage-banner">
   <div class="main-header">
     <h1>Une équipe derrière chaque consultant.</h1>
+    <h3>Proposition triangulée entre la concurrence et les besoins de SEO</h3>
+		<div>
+	  	<button class="contact-btn">Contactez-nous</button>
+		</div>
   </div>
 </div>
 
 <!-- SECTION SERVICES -->
 <div>
-  <div class="d-flex">
-    <div class="container text-center d-grid flex-wrap">
+	<h2>Ce que vous pouvez accomplir avec Coop Interface</h2>
+  <div class="container">
+    <div class="card-container d-flex flex-wrap text-center d-grid">
   		<% @services.each do |service| %>
       	<div class="service-card">
+    			<div>logo</div>
 	  		  <h3><%= service.name %></h3> <br> 
 	        <%= service.description %> <br> 
 	        <%= link_to "En savoir plus", "#", class: "" %>
