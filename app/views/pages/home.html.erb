@@ -6,7 +6,7 @@
     <h1>Une équipe derrière chaque consultant.</h1>
     <h3>Proposition triangulée entre la concurrence et les besoins de SEO</h3>
 		<div>
-	  	<button class="contact-btn">Contactez-nous</button>
+	  	<%= link_to "Contactez-nous", contact_path, method: "get", class: "btn btn-danger"%>
 		</div>
   </div>
 </div>
@@ -64,6 +64,7 @@
 		<% end %>
 	</div>
 </div>
+ <%= render partial: "shared/footer" %>
 
 
 

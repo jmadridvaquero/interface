@@ -1,10 +1,23 @@
-<div class="container">
-	 <img src="#" alt="">
+<%= render partial: "shared/navbar" %>
+<div id="service-banner">
+	<div class="service-header">
 	 <h1><%= @service.name %></h1>
+	 <h3><%= @service.summary %></h3>
    <p><%= @service.description %></p>
+   <div>
+   	<%= link_to "Contactez-nous", contact_path, method: "get", class: "btn btn-danger"%>
+		</div>
+	</div>
 </div>
 
 <div class="review-container">
-	<%= service.review.client %>
-	<%= service.review.content %>
+	<h2>Ce que nos clients disent de nous</h2>
+   <% @service.reviews.each do |review| %>
+	   <div class="review-comment">
+	   	 <p>"<%= review.content %>"</p>
+		   <p><%= review.client %>, <%= review.position %> </p>
+		   <h6><%= review.company %></h6>
+		 </div>
+	 <% end %>
 </div>
+ <%= render partial: "shared/footer" %>
