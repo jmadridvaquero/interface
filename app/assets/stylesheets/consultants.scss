@@ -3,17 +3,43 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .consultant-div {
-	position: fixed;
-	text-align: center;
-    top: 40%;
-    left: 50%;
-    width:30em;
-    margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-right: 30%;
+	padding-left: 30%;
+	padding-top: 180px; 
+	// position: fixed;
+	// text-align: center;
+ //    top: 40%;
+ //    left: 50%;
+ //    width:30em;
+ //    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+ //    margin-left: -15em; /*set to a negative number 1/2 of your width*/
 }
+
 .consultant-name {
 	padding: 24px 0 6px 0;
 }
-.consultant-bio {
-	text-align: justify;
+.consultant-bio p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+}
+
+.consultant-expertise p {	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 85.7%;
+	/* or 12px */
+	text-transform: uppercase;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+
+	/* dark gray */
+	// background: #262727;	
 }
