@@ -1,16 +1,34 @@
 .service-card {
+	float: left;
+  // width: 25%;
+  // padding: 0 10px;
 	width: 212px;
 	height: 243px;
 	background: #FFFFFF;
 	box-shadow: 2px 5px 13px rgba(0, 30, 87, 0.16);
 	border-radius: 12px;
-	padding: 8px;
 }
 
+@media screen and (max-width: 600px) {
+  .service-card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
 .card-container{
-	max-width: 800px;
+	// margin: 0 -5px;
+	// width: 800px;
 	height: 540px;
 	justify-content: space-evenly; 
+}
+
+.card-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .card-container p {
@@ -46,4 +64,5 @@
 	width: 45px;
 	margin: 4px;
 	margin-bottom: 12px;
+	margin-top: 16px;
 }

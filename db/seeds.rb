@@ -31,10 +31,10 @@ Service.create!([{
 	name: 'Évaluation',
 	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626648/Coop%20interface/checklist2_goaspt.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
-Service.create!([{ 
-	name: 'Divers',
-	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626653/Coop%20interface/diamond_q7bzmm.svg', 
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
+# Service.create!([{ 
+# 	name: 'Divers',
+# 	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626653/Coop%20interface/diamond_q7bzmm.svg', 
+# 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 
 Review.create!([{ client: 'Megan Kotze', position: 'Development Manager', company: 'Hot Docs Documentary Film Festival', 
 				  content: 'Hot Docs commissioned Co-op Interface to conduct the festival’s first economic impact assessment. We worked easily and collaboratively with [them and were].. very pleased with Co-op Interface’s professionalism, attention to detail, and ultimately the results of the study.',
