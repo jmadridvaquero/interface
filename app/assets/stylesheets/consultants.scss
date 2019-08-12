@@ -3,14 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .consultant-div {
-	position: fixed;
-	text-align: center;
-    top: 40%;
-    left: 50%;
-    width:30em;
-    margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 35vw;
+	padding-right: 35vw;
+	padding-top: 60px; 
+	// position: fixed;
+	// text-align: center;
+ //    top: 40%;
+ //    left: 50%;
+ //    width:30em;
+ //    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+ //    margin-left: -15em; /*set to a negative number 1/2 of your width*/
 }
+
 .consultant-name {
 	padding: 24px 0 6px 0;
 }
