@@ -15,6 +15,7 @@ Service.create!([{
 	name: 'Études, analyses et recherche',
 	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565625459/Coop%20interface/Asset_3_shw7mf.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
+
 Service.create!([{ 
 	name: 'Stratégies d’organisation',
 	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626642/Coop%20interface/chart1_euyntt.svg', 

@@ -1,3 +1,19 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#service-banner {
+	background: linear-gradient(30.03deg, #F0F5F8 34.41%, rgba(240, 245, 248, 0) 87.3%);;
+	width: 100vw; 
+	background-size: 100vw;
+	height: 700px;
+}
+
+.service-header {
+	width: 600px;
+	position: absolute;
+  left: 400px;
+	top: 200px;
+	 p {
+	 	margin-bottom: 2rem;
+	 }
+}
