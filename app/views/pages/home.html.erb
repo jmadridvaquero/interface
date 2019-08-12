@@ -18,7 +18,7 @@
     <div class="card-container d-flex flex-wrap text-center d-grid">
   		<% @services.each do |service| %>
       	<div class="service-card">
-    			<div>logo</div>
+    			<div class="card-img"><%= image_tag service.photo %></div>
 	  		  <h3><%= service.name %></h3> 
 	        <p><%= service.description %></p> 
 	        <%= link_to "En savoir plus", "#", class: "card-link" %>
