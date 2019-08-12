@@ -19,9 +19,9 @@
   		<% @services.each do |service| %>
       	<div class="service-card">
     			<div>logo</div>
-	  		  <h3><%= service.name %></h3> <br> 
-	        <%= service.description %> <br> 
-	        <%= link_to "En savoir plus", "#", class: "" %>
+	  		  <h3><%= service.name %></h3> 
+	        <p><%= service.description %></p> 
+	        <%= link_to "En savoir plus", "#", class: "card-link" %>
       	</div>
   		<% end %>
     </div>
