@@ -12,23 +12,30 @@ Consultant.create([{ name: 'Éric Steedman', bio: 'lorem ipsum', photo: 'https:/
 Consultant.create([{ name: 'Javier M Vaquero', bio: 'lorem ipsum', photo: 'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565365881/interface/prfile_linkedin_wvdjtl.jpg', expertise: 'consultant'}])	
 
 Service.create!([{ 
-	name: 'Études, analyses et recherche', photo:'https://res.cloudinary.com/jmadridvaquero/image/upload/v1565384351/interface/unsplash-service-analyse-recherche_os43oc.jpg', summary:'Lorem ipsum dolor sit amet, consectetur adipiscing.',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}])
+	name: 'Études, analyses et recherche',
+	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565625459/Coop%20interface/Asset_3_shw7mf.svg', 
+	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
+
 Service.create!([{ 
-	name: 'Stratégies d’organisation', 
+	name: 'Stratégies d’organisation',
+	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626642/Coop%20interface/chart1_euyntt.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 Service.create!([{ 
-	name: 'Soutien à la gestion humaine', 
+	name: 'Soutien à la gestion humaine',
+	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626660/Coop%20interface/tools1_zoxoie.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 Service.create!([{ 
-	name: 'Animation et formation', 
+	name: 'Animation et formation',
+	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626657/Coop%20interface/flash2_iocvvo.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 Service.create!([{ 
-	name: 'Évaluation', 
+	name: 'Évaluation',
+	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626648/Coop%20interface/checklist2_goaspt.svg', 
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
-Service.create!([{ 
-	name: 'Divers', 
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
+# Service.create!([{ 
+# 	name: 'Divers',
+# 	photo: 'https://res.cloudinary.com/grosjardin/image/upload/v1565626653/Coop%20interface/diamond_q7bzmm.svg', 
+# 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.'}])
 
 Review.create!([{ client: 'Megan Kotze', position: 'Development Manager', company: 'Hot Docs Documentary Film Festival', 
 				  content: 'Hot Docs commissioned Co-op Interface to conduct the festival’s first economic impact assessment. We worked easily and collaboratively with [them and were].. very pleased with Co-op Interface’s professionalism, attention to detail, and ultimately the results of the study.',

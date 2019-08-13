@@ -5,26 +5,24 @@
   <div class="main-header">
     <h1>Une équipe derrière chaque consultant.</h1>
     <h3>Proposition triangulée entre la concurrence et les besoins de SEO</h3>
-		<div>
-	  	<%= link_to "Contactez-nous", contact_path, method: "get", class: "btn btn-danger"%>
-		</div>
+	  <%= link_to "Contactez-nous", contact_path, method: "get", class: "contact-btn"%>
   </div>
 </div>
 
 <!-- SECTION SERVICES -->
 <div>
-	<h2>Ce que vous pouvez accomplir avec Coop Interface</h2>
-  <div class="container">
-    <div class="card-container d-flex flex-wrap text-center d-grid">
-  		<% @services.each do |service| %>
-      	<div class="service-card">
-    			<div>logo</div>
-	  		  <h3><%= service.name %></h3> <br> 
-	        <%= service.description %> <br> 
-	        <%= link_to "En savoir plus", "#", class: "" %>
-      	</div>
-  		<% end %>
-    </div>
+	<div class="secondary-header">
+		<h2>Ce que vous pouvez accomplir avec Coop Interface</h2>
+	</div>
+  <div class="card-container d-flex flex-wrap text-center d-grid">
+		<% @services.each do |service| %>
+    	<div class="service-card">
+  			<div class="card-img"><%= image_tag service.photo %></div>
+  		  <h3><%= service.name %></h3> 
+        <p><%= service.description %></p> 
+        <%= link_to "En savoir plus", "#", class: "card-link" %>
+    	</div>
+		<% end %>
   </div>
 </div>
 

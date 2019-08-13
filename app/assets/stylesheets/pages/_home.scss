@@ -1,7 +1,7 @@
 
 #homepage-banner {
 	background: linear-gradient(30.03deg, #F0F5F8 34.41%, rgba(240, 245, 248, 0) 87.3%);;
-	width: 100vw; 
+	// width: 100vw; 
 	background-size: 100vw;
 	height: 800px;
 }
@@ -14,6 +14,13 @@
 	top: 221px;
 }
 
+.secondary-header {
+	width: 100vw;
+	display: inline-block;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
 
 @media (min-width: 956px) {
 	#search-box input{
