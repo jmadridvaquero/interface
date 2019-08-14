@@ -55,16 +55,19 @@
 	<div class="secondary-header">
 		<h2>Ce que nos clients disent sur nous</h2>
 	</div>	
-	<div class="container">
-		<% @reviews.each do |review| %>
-		<div>
-			<%= review.content %>
+	<div class="review-card-container">
+		<div id="arrow-left"></div>
+		<div class="review-card">
+			<% @reviews.each do |review| %>
+			<div>
+				<p><%= review.content %></p> 
+			</div>
+			<div>
+				<h1><strong><%= review.client %>,</strong> <%= review.position %></h1>
+				<h2> <%= review.company %></h2>
+			</div>
+			<% end %>
 		</div>
-		<div>
-			<p><strong><%= review.client %>,</strong> <%= review.position %></p> <br>
-			<p> <%= review.company %></p>
-		</div>
-		<% end %>
 	</div>
 </div>
  <%= render partial: "shared/footer" %>
