@@ -27,29 +27,34 @@
 </div>
 
 <!-- SECTION LOGOS CLIENT -->
-<div>
-	<h2>Plus de 100 clients nous ont fait confiance</h2>
+<div class="gray-section">
+	<div class="secondary-header">
+		<h2>Plus de 100 clients nous ont fait confiance</h2>
+	</div>
 </div>
 
 <!-- SECTION CONSULTANTS -->
-<div>
+<div class="secondary-header">
 	<h2>Une équipe d’experts à votre disposition</h2>
-</div>
-<div>
-	<div class="container text-center d-grid flex-wrap">
-		<% @consultants.each do |consultant| %>	
-		<div class="consultant-card">
-			<h3>
-				<%= consultant.name %>
-			</h3>
+	<div>
+		<div class="consultant-card-container">
+			<% @consultants.each do |consultant| %>	
+			<div class="consultant-card">
+				<%= image_tag consultant.photo %>
+				<h3>
+					<%= consultant.name %>
+				</h3>
+			</div>
+			<% end %>
 		</div>
-		<% end %>
 	</div>
 </div>
 
 <!-- SECTION REVIEWS-->
-<div>		
-	<h2>Ce que nos clients disent sur nous</h2>
+<div class="gray-section">	
+	<div class="secondary-header">
+		<h2>Ce que nos clients disent sur nous</h2>
+	</div>	
 	<div class="container">
 		<% @reviews.each do |review| %>
 		<div>
