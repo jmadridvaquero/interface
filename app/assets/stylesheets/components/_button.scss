@@ -35,3 +35,30 @@
 	background-color: #dd0014;
 	display: inline-block;
 }
+
+.contact-btn-navbar {
+	text-align: center;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FFFFFF;
+	border-radius: 32px;
+	border-width: 2px;
+	border-color: #dd0014;
+	// position: absolute;
+	width: 167px;
+	height: 32px;
+	color: #dd0014;
+	background-color: transparent;
+	display: inline-block;
+}
+
+.contact-btn-navbar p {
+	margin-top: 5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+}

@@ -9,3 +9,20 @@
 .photo-consultant-show {
 
 }
+
+.consultant-card-container {
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	padding-left: 12%;
+	padding-right: 12%;
+}
+
+.consultant-card img {
+	width: 162px;
+	height: 162px;
+	border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  margin-top: 92px;
+}

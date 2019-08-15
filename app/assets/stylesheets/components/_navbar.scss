@@ -1,25 +1,7 @@
-// .navbar-lewagon {
-//   justify-content: space-between;
-//   background: white;
-// 	font-family: Roboto;
-// 	font-style: normal;
-// 	font-weight: 500;
-// 	font-size: 14px;
-// 	line-height: 16px;
-//   #navbarDropdown {
-//   	width: 40px;
-//   	border-radius: 50%;
-//   }
-// }
-
-// .navbar-interface .navbar-collapse {
-//   flex-grow: 0;
-// }
 
 .navbar-brand img {
   width: 150px;
 }
-
 
 .box {
     position: absolute;
@@ -45,12 +27,16 @@ ul#horizontal-list a {
 	justify-content: space-between;
 }
 
-
+.secondary-navbar-links {
+	width: 638px;
+	display: flex;
+	justify-content: space-between;
+}
 
 .navbar-coop {
 	display: flex;
 	align-items: baseline;
-	position: fixed; 
+	position: absolute; 
 	justify-content: space-between;
   background: transparent;
 	font-family: Roboto;
@@ -63,5 +49,26 @@ ul#horizontal-list a {
 	margin-right: 60px;
 	right: 0px;
   left: 0px;
+}
+
+.secondary_navbar-coop {
+	width: 100vw;
+	height: 108px;
+	display: flex;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	align-items: baseline;
+	justify-content: space-between;
+  background: #F7FAFB;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.10	);		
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;	
+	padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 8px;
 }
 
