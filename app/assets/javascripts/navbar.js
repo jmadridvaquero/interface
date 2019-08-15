@@ -1,9 +1,9 @@
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 800) {
-        $('.bottomMenu').fadeIn();
+    if (y > 650) {
+        $('.secondary_navbar-coop').fadeIn();
     } else {
-        $('.bottomMenu').fadeOut();
+        $('.secondary_navbar-coop').fadeOut();
     }
 
 });
