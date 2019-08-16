@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   	resources :consultants
   	resources :reviews
   	resources :services
-  	resources :contact
 	end
 
   resources :consultants, only: [:index, :show]
