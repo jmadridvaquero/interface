@@ -6,13 +6,13 @@
 	 <h3><%= @service.summary %></h3>
    <p><%= @service.description %></p>
    <div>
-   	<%= link_to "Contactez-nous", contact_path, method: "get", class: "btn btn-danger"%>
+   	<%= link_to t("contact_us"), contact_path, method: "get", class: "btn btn-danger"%>
 		</div>
 	</div>
 </div>
 
 <div class="review-container">
-	<h2>Ce que nos clients disent de nous</h2>
+	<h2><%= t("clients_say") %></h2>
    <% @service.reviews.each do |review| %>
 	   <div class="review-comment">
 	   	 <p>"<%= review.content %>"</p>
@@ -21,4 +21,4 @@
 		 </div>
 	 <% end %>
 </div>
- <%= render partial: "shared/footer" %>
+<%= render partial: "shared/footer" %> 

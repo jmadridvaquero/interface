@@ -3,16 +3,16 @@
 
 <div id="homepage-banner">
   <div class="main-header">
-    <h1>Une équipe derrière chaque consultant.</h1>
-    <h3>Proposition triangulée entre la concurrence et les besoins de SEO</h3>
-	  <button class="contact-btn">Contactez-nous</button>
+    <h1><%= t("slogan") %></h1>
+    <h3><%= t("value_prop") %></h3>
+    <%= link_to t("contact_us"), '/contact',class: "contact-btn" %>
   </div>
 </div>
 
 <!-- SECTION SERVICES -->
 <div>
-	<div class="secondary-header">
-		<h2>Ce que vous pouvez accomplir avec Coop Interface</h2>
+	<div class="secondary-header" id="services-index">
+		<h2><%= t("accomplish") %></h2>
 	</div>
   <div class="card-container d-flex flex-wrap text-center d-grid">
 		<% @services.each do |service| %>
@@ -20,7 +20,7 @@
   			<div class="card-img"><%= image_tag service.photo %></div>
   		  <h3><%= service.name %></h3> 
         <p><%= service.description %></p> 
-        <%= link_to "En savoir plus", "#", class: "card-link" %>
+        <%= link_to t("tell_more"), "#", class: "card-link" %>
     	</div>
 		<% end %>
   </div>
@@ -29,13 +29,13 @@
 <!-- SECTION LOGOS CLIENT -->
 <div class="gray-section">
 	<div class="secondary-header">
-		<h2>Plus de 100 clients nous ont fait confiance</h2>
+		<h2><%= t("our_clients") %></h2>
 	</div>
 </div>
 
 <!-- SECTION CONSULTANTS -->
-<div class="secondary-header">
-	<h2>Une équipe d’experts à votre disposition</h2>
+<div class="secondary-header" id="consultants-index">
+	<h2><%= t("team") %></h2>
 	<div>
 		<div class="consultant-card-container">
 			<% @consultants.each do |consultant| %>	
@@ -53,7 +53,7 @@
 <!-- SECTION REVIEWS-->
 <div class="gray-section">	
 	<div class="secondary-header">
-		<h2>Ce que nos clients disent sur nous</h2>
+		<h2><%= t("clients_say") %></h2>
 	</div>	
 	<div class="review-card-container">
 		<div id="arrow-left"></div>
@@ -74,6 +74,7 @@
 <!-- <div class="bottomMenu"></div> -->
 
  <%= render partial: "shared/footer" %>
+
 
 
 
