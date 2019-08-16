@@ -12,9 +12,9 @@
 	   		<p><%= @consultant.bio %></p>
 		 </div>
 		 <div class="consultant-expertise">
-	   		<p>Expertises: <strong><%= @consultant.expertise %></strong></p>
+	   		<p><%= t("expertise") %> <strong><%= @consultant.expertise %></strong></p>
 		 </div>
 		 <div class="button-contact">
-				<%= link_to "Pour me rejoindre", contact_path, method: "get", class: "btn btn-danger"%>
+				<%= link_to t("join_me"), contact_path, method: "get", class: "btn btn-danger"%>
 		 </div>
 	</div>
