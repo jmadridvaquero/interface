@@ -5,13 +5,14 @@
   <div class="main-header">
     <h1><%= t("slogan") %></h1>
     <h3><%= t("value_prop") %></h3>
-	  <button class="contact-btn"><%= t("contact_us") %></button>
+    <%= link_to t("contact_us"), '/contact',class: "contact-btn" %>
+	  
   </div>
 </div>
 
 <!-- SECTION SERVICES -->
 <div>
-	<div class="secondary-header">
+	<div class="secondary-header" id="services-index">
 		<h2><%= t("accomplish") %></h2>
 	</div>
   <div class="card-container d-flex flex-wrap text-center d-grid">
@@ -34,7 +35,7 @@
 </div>
 
 <!-- SECTION CONSULTANTS -->
-<div class="secondary-header">
+<div class="secondary-header" id="consultants-index">
 	<h2><%= t("team") %></h2>
 	<div>
 		<div class="consultant-card-container">
