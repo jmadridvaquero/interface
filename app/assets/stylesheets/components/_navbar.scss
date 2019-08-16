@@ -34,6 +34,7 @@ ul#horizontal-list a {
 }
 
 .navbar-coop {
+	z-index: 2;
 	display: flex;
 	align-items: baseline;
 	position: absolute; 
@@ -52,12 +53,12 @@ ul#horizontal-list a {
 }
 
 .secondary_navbar-coop {
-	width: 100vw;
-	height: 108px;
-	display: flex;
-	position: fixed;
-	top: 0;
 	z-index: 1;
+	position: fixed;
+	display: none;	
+	top: 0;
+	width: 100vw;
+	height: 108px;	
 	align-items: baseline;
 	justify-content: space-between;
   background: #F7FAFB;
