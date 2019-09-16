@@ -15,3 +15,9 @@ fr:
   expertise: "Expertises"
   join_me: "Pour me rejoindre"
   send: "Envoyer"
+  talk: "Parlons un peu de vous"
+ 
+  helpers:
+    label:
+      contact:
+        name: "Nom"

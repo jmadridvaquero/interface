@@ -24,6 +24,10 @@ gem 'cloudinary', '~> 1.9.1'
 gem 'simple_form'
 gem 'http_accept_language'
 gem 'mobility', '~> 0.8.6'
+gem 'globalize'
+gem 'activemodel-serializers-xml'
+
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
