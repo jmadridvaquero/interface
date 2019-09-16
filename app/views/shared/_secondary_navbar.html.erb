@@ -14,16 +14,20 @@
         <%= link_to t("about"), "#", class: "nav-link" %>
       </li>
       <li>
-        <%= link_to "SERVICES", "#services-index", class: "nav-link" %>
+        <%= link_to "SERVICES", "#{root_path}#services-index", class: "nav-link" %>
       </li>
       <li>
-        <%= link_to t("team"), "#consultants-index", class: "nav-link" %>
+        <%= link_to t("team"), "#{root_path}#consultants-index", class: "nav-link" %>
       </li>
       <li>
         <%= link_to t("contact_us"), '/contact',class: "contact-btn-navbar" %>
       </li>
       <li>
-        <%= link_to t("en"), "/#{t("en")}", class: "nav-link" %>
+        <% if I18n.locale == I18n.default_locale %>
+          <%= link_to "English", { :locale=>'en' }, class: "nav-link" %>
+        <% else %>
+          <%= link_to "Français", { :locale=>'fr' }, class: "nav-link" %>
+        <%end%>
       </li>
     </ul>
   </div>

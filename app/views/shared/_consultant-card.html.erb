@@ -1,0 +1,12 @@
+<div class="consultant-card-container">
+	<% @consultants.each do |consultant| %>	
+		<%= link_to consultant_path(consultant) do %>
+			<div class="consultant-card">
+				<%= image_tag consultant.photo %>
+				<h3>
+					<%= consultant.name %>
+				</h3>
+			</div>
+		<% end %>
+	<% end %>
+</div>

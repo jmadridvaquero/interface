@@ -22,6 +22,12 @@ en:
   expertise: "Expertise"
   join_me: "Message me"
   send: "Send"
+  talk: "Let's talk"
+  
+  helpers:
+    label:
+      contact:
+        name: "Name"
 
 
 
