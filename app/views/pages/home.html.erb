@@ -2,12 +2,14 @@
 <%= render partial: "shared/secondary_navbar" %>
 
 <div id="homepage-banner">
+	<img src="https://res.cloudinary.com/jmadridvaquero/image/upload/v1568830939/interface/COOP-team-1_ido8jp.jpg" alt="img-banner" id="img-banner">
   <div class="main-header">
     <h1><%= t("slogan") %></h1>
     <h3><%= t("value_prop") %></h3>
     <%= link_to t("contact_us"), '/contact',class: "btn btn-danger" %>
   </div>
 </div>
+
 
 <!-- SECTION SERVICES -->
 <div>
@@ -16,12 +18,14 @@
 	</div>
   <div class="card-container d-flex flex-wrap text-center d-grid">
 		<% @services.each do |service| %>
+		<%= link_to service_path(service) do %>
     	<div class="service-card">
   			<div class="card-img"><%= image_tag service.photo %></div>
   		  <h3><%= service.name %></h3> 
         <p><%= service.description %></p> 
         <%= link_to t("tell_more"), "#", class: "card-link" %>
     	</div>
+    	<% end %>
 		<% end %>
   </div>
 </div>

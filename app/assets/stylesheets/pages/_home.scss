@@ -6,11 +6,27 @@
 	position: relative; 
 }
 
+#img-banner {
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	right: 200px;
+	top: 250px;
+}
+
 .gray-section {
 	background-color: #F0F5F8;
 	background-size: 100vw;
-	height: 800px;
+	height: 500px;
 
+}
+
+h3 {
+	color: #4A4C50;
+}
+
+h3:hover {
+	text-decoration: none;
 }
 
 .main-header {

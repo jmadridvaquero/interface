@@ -8,14 +8,6 @@
 	vertical-align: middle;
 }
 
-.btn-secondary {
-	background-color:#828489;
-	width: 250px;
-	height: 60px;
-	border-radius: 50px;
-
-}
-
 .contact-btn {
 	display: flex;
 	align-items: center;
@@ -36,9 +28,31 @@
 	display: inline-block;
 }
 
-contact-btn:hover {
+.contact-btn:hover {
 	text-decoration-color: white;
 }
+
+.btn-outline-danger {
+	// text-align: center;
+	// font-style: normal;
+	// color: #de0014;
+	// font-weight: 300;
+	// font-size: 20px;
+	 width: 150px;
+	 // height: 60px;
+   border-radius: 32px;
+   border: 1.5px solid #de0014;
+	// display: table-cell; 
+	// vertical-align: middle;
+	// background-color: transparent;
+	// display: inline-block;
+}
+
+.btn-outline-danger:hover {
+	color: #de0014;
+	text-decoration-style: none;
+}
+
 
 .contact-btn-navbar {
 	text-align: center;
@@ -46,7 +60,6 @@ contact-btn:hover {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 100%;
-	color: #FFFFFF;
 	border-radius: 32px;
 	border-width: 2px;
 	border-color: #dd0014;
