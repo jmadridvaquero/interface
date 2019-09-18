@@ -26,6 +26,8 @@ gem 'http_accept_language'
 gem 'mobility', '~> 0.8.6'
 gem 'globalize'
 gem 'activemodel-serializers-xml'
+gem 'rails-i18n'
+
 
 
 
