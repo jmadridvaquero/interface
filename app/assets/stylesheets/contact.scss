@@ -64,12 +64,18 @@ font-size: .8em;
 	// background: linear-gradient(30.03deg, #F0F5F8 34.41%, rgba(240, 245, 248, 0) 87.3%);
 	background-size: 100vw;
 	height: 800px;
-	position: relative; 
+	position: relative;
+
 }
 
 .contact-container h2 {
 	display: flex;
 	justify-content: center;
 	padding-top: 162px;
+	padding-bottom: 28px;
+}
+
+.contact-fields {
+	margin-left: 25%;
 }
 
