@@ -5,7 +5,7 @@
   <div class="main-header">
     <h1><%= t("slogan") %></h1>
     <h3><%= t("value_prop") %></h3>
-    <%= link_to t("contact_us"), '/contact',class: "contact-btn" %>
+    <%= link_to t("contact_us"), '/contact',class: "btn btn-danger" %>
   </div>
 </div>
 
@@ -37,16 +37,7 @@
 <div class="secondary-header" id="consultants-index">
 	<h2><%= t("team") %></h2>
 	<div>
-		<div class="consultant-card-container">
-			<% @consultants.each do |consultant| %>	
-			<div class="consultant-card">
-				<%= image_tag consultant.photo %>
-				<h3>
-					<%= consultant.name %>
-				</h3>
-			</div>
-			<% end %>
-		</div>
+		<%= render partial: "shared/consultant-card", object: @consultant%>
 	</div>
 </div>
 
